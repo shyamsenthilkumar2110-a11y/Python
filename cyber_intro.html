@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cybersecurity About</title>
+</head>
+
+<body>
+  <main>
+    <h1>CYBERSECURITY</h1>
+
+    <p>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREGuz2BM_wLvb7_0H2ajEzqmUOw3neRPfSSg&s" alt="cyberimage">
+    </p>
+
+    <h2>DEFINITION</h2>
+    <p>
+      Cybersecurity is the practice of protecting systems, networks, programs, devices, and data from digital attacks.
+    </p>
+
+    <h3 id="heading">KEY COMPONENTS</h3>
+    <button id="toggleBtn">Click Me</button>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU0mtD0S0ZmLEbtVQwpX8A8PvCu-Jo4i0Qog&s" alt="component cyber">
+
+    <ol>
+      <li>
+        <strong>Purpose:</strong>
+        <p>To defend digital assets from malicious attacks.</p>
+      </li>
+    </ol>
+
+    <section>
+      <h3>IMPORTANCE:</h3>
+
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReeBXUSXoBnfYyUXDJBzeL1M4sTHedA2bCyA&s" alt="importance">
+
+      <p>Cybersecurity protects sensitive data and prevents attacks.</p>
+    </section>
+  </main>
+
+  <footer>
+    <h4>Contact</h4>
+    <ul>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="mailto:tce123@gmail.com">E-mail</a></li>
+    </ul>
+  </footer>
+
+  <h5>MEMBER LOGIN</h5>
+
+  <p>USERNAME:</p>
+  <input type="text" id="username">
+
+  <p>PASSWORD:</p>
+  <input type="password" id="password">
+
+  <p>CAPTION: Pnq12C</p>
+  <input type="text" id="caption">
+
+  <button id="summit">Submit</button>
+
+  <p>OUTPUT:</p>
+  <p id="display"></p>
+
+  <!-- JavaScript -->
+  <script>
+    console.log("Cybersecurity web page loaded");
+
+    const heading = document.getElementById("heading");
+    const toggleBtn = document.getElementById("toggleBtn");
+
+    toggleBtn.addEventListener("click", function () {
+      if (heading.textContent === "KEY COMPONENTS") {
+        alert("Thanks for visiting our website");
+        heading.textContent = "TYPES AVAILABLE IN IT...";
+      } else {
+        heading.textContent = "KEY COMPONENTS";
+      }
+    });
+
+    const username = document.getElementById("username");
+    const password = document.getElementById("password");
+    const caption = document.getElementById("caption");
+    const summit = document.getElementById("summit");
+    const display = document.getElementById("display");
+
+    summit.addEventListener("click", function () {
+      if (
+        username.value === "cybersecurity" &&
+        password.value === "21102006" &&
+        caption.value === "Pnq12C"
+      ) {
+        display.textContent = "Login Successful";
+        alert("Login Successful");
+      } else {
+        display.textContent = "Login Failed";
+        alert("Login Failed");
+
+        if (username.value !== "cybersecurity") {
+          alert("Incorrect username");
+        }
+        if (password.value !== "21102006") {
+          alert("Incorrect password");
+        }
+        if (caption.value !== "Pnq12C") {
+          alert("Incorrect caption");
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
